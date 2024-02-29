@@ -10,7 +10,9 @@ h1 {
 p {
     color: #E5E7EB;
 }
-
+body {
+    flex-shrink: 0;
+}
 
 .header {
     margin-top: -10px;
@@ -66,15 +68,21 @@ button {
     padding:10px;
     min-height:20px; 
     min-width: 120px;
+    border: 1px solid white;
   }
 
   .main{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 52px;
+    flex: 1;
+ padding-top: 32px;
   }
   
-  
+.middle {
+    padding-bottom: 48px;
+}
   .container {
   max-width: 200px;
   display: flex;
@@ -82,14 +90,89 @@ button {
   align-items: center;
   }
   .title {
+    display: flex;
     font-size: 36px;
     font-weight: 900;
-    text-align: center;
-    padding-bottom: 32px;
+    justify-content: center;
+    padding-top: 16px;
+ 
   }  
   .container > img {
     height: 100px;
     width: 100px;
     text-align: center;
     padding-bottom: 10px;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #E5E7EB;
+    flex: 1;
+    
+}
+.bottom > blockquote > .blockquote__text {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    margin: 0;
+}
+.blockquote__text--credit {
+    text-align: right;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.bottom-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.bluebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    width: 800px;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.banner-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius:15px; 
+    padding:10px;
+    min-height:20px; 
+    min-width: 120px;
+    border: 1px solid white;
+  }
+
+  .callActionText {
+    padding-bottom: 8px;
+    font-size: 24px;
+    color:#F9FAF8;
+  }
+    .subtext {
+        color:#F9FAF8;
+    }
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
